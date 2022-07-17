@@ -1,19 +1,13 @@
 import { Flex, Grid } from "@chakra-ui/react";
 import Product from "./product";
-//import { products } from "../../mocks";
+import { productData } from "../../mocks";
 import React, { useState, useEffect } from "react";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
-  //const [pokemons, setPokemons] = useState([]);
+
   useEffect(() => {
-    fetch(
-      "https://r8ygrvvgzj.execute-api.us-east-1.amazonaws.com/dev/products/"
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setProducts(data);
-      });
+    setProducts(productData);
   }, []);
   return (
     <Flex

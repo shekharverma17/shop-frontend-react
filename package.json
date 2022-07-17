@@ -1,7 +1,7 @@
 {
-  "name": "chakra-ui-product-list",
+  "name": "aws-serverless-frontend-shop",
   "version": "1.0.0",
-  "description": "Simple product list template",
+  "description": "Simple aws serverless shop",
   "keywords": [
     "template",
     "react",
