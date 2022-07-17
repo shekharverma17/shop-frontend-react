@@ -1,2 +1,3 @@
 # shop-frontend-react
-Created with CodeSandbox
+
+Frontend for AWS serverless API 
