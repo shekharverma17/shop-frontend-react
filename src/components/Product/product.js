@@ -20,7 +20,7 @@ const Product = ({ category, image, title, rating, price }) => (
         / unit
       </Box>
     </Box>
-    <Box>Rating: {rating.rate}</Box>
+    <Box>Rating: {rating && rating.rate}</Box>
   </SimpleGrid>
 );
 
