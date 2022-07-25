@@ -1,21 +1,21 @@
 import { Flex, Grid } from "@chakra-ui/react";
 import Product from "./product";
 import React, { useState, useEffect } from "react";
-
+import { useParams } from 'react-router-dom';
 const ProductDetails = () => {
   const [product, setProduct] = useState([]);
-
+  const { id } = useParams()
   useEffect(() => {
     fetch(
-      "https://r8ygrvvgzj.execute-api.us-east-1.amazonaws.com/dev/products/1"
+      `https://af3dyix2oc.execute-api.us-east-1.amazonaws.com/dev/products/${id}`
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
-        setProduct(data);
+        setProduct(data[0]);
       });
   }, []);
   console.log(product)
+
   return (
    <>
     <Flex

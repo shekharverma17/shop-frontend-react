@@ -7,7 +7,7 @@ const ProductList = () => {
 
   useEffect(() => {
     fetch(
-      "https://r8ygrvvgzj.execute-api.us-east-1.amazonaws.com/dev/products/"
+      "https://af3dyix2oc.execute-api.us-east-1.amazonaws.com/dev/products"
     )
       .then((response) => response.json())
       .then((data) => {
